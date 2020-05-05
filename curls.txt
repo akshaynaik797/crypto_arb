@@ -1,0 +1,19 @@
+curl 'https://bitbns.com/order/purchasePlayBTC/' -H 'Host: bitbns.com' -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0' -H 'Accept: */*' -H 'Accept-Language: en-US,en;q=0.5' --compressed -H 'Referer: https://bitbns.com/trade/' -H 'content-type: application/x-www-form-urlencoded' -H 'xsrf-token: CpBLDqzN-Qk0Wos48Ta3rIwYEDVCn5jYN27o' -H 'cache-control: no-store, no-cache' -H 'pragma: no-store, no-cache' -H 'origin: https://bitbns.com' -H 'Cookie: __cfduid=d5e1ceae02a8b8e25337ab42c7e5ecf491588512875; connect.sid=s%3AJLvdzE1RXjRHQUdNf6uXxwdUM39M2YT-.3rqsZ%2BYbQQvgRYS%2BAO5QFA%2BKOP0bOJNIo8aqK8F3jn8; _ga=GA1.2.829539891.1588512887; _gid=GA1.2.73204397.1588512887; popupToShow=0; _csrf=oTssfuXJLuZUfCXKox-8Byne; XSRF-TOKEN=CpBLDqzN-Qk0Wos48Ta3rIwYEDVCn5jYN27o; __cfruid=2eeb8b8f3f8370d7e6325e4416442bfffc62881e-1588580843' -H 'Connection: keep-alive' --data 'quantity=1&rate=80.12&coin=54&feeFlag=1'
+
+quantity=1
+rate=80.13
+coin=54
+feeFlag=1
+
+
+
+curl 'https://bitbns.com/order/sellPlayBTC/' -H 'Accept: */*' --compressed -H 'Accept-Language: en-US,en;q=0.5' -H 'cache-control: no-store, no-cache' -H 'Connection: keep-alive' -H 'content-type: application/x-www-form-urlencoded' -H 'Cookie: __cfduid=d5e1ceae02a8b8e25337ab42c7e5ecf491588512875; connect.sid=s%3AJLvdzE1RXjRHQUdNf6uXxwdUM39M2YT-.3rqsZ%2BYbQQvgRYS%2BAO5QFA%2BKOP0bOJNIo8aqK8F3jn8; _ga=GA1.2.829539891.1588512887; _gid=GA1.2.73204397.1588512887; popupToShow=0; _csrf=oM66roSH9g6S6EpJBRdESU04; XSRF-TOKEN=dUVjk6nz-mkwkOCy7xMVZ5-X37FKneindhWw; __cfruid=7bc0f2493675bb6a43c937a473412a587ed10513-1588581516; _gat=1' -H 'Host: bitbns.com' -H 'origin: https://bitbns.com' -H 'pragma: no-store, no-cache' -H 'Referer: https://bitbns.com/trade/' -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0' -H 'xsrf-token: dUVjk6nz-mkwkOCy7xMVZ5-X37FKneindhWw' --data 'quantity=1&rate=79.89&coin=54&feeFlag=1'
+
+
+quantity=1
+rate=79.92
+coin=54
+feeFlag=1
+
+
+curl 'https://bitbns.com/order/getBalance/' -H 'Accept: */*' --compressed -H 'Accept-Language: en-US,en;q=0.5' -H 'cache-control: no-store, no-cache' -H 'Connection: keep-alive' -H 'Cookie: __cfduid=d5e1ceae02a8b8e25337ab42c7e5ecf491588512875; connect.sid=s%3AJLvdzE1RXjRHQUdNf6uXxwdUM39M2YT-.3rqsZ%2BYbQQvgRYS%2BAO5QFA%2BKOP0bOJNIo8aqK8F3jn8; _ga=GA1.2.829539891.1588512887; _gid=GA1.2.73204397.1588512887; popupToShow=0; _csrf=oM66roSH9g6S6EpJBRdESU04; XSRF-TOKEN=Qf8hnRrs-t_lGvUpL_eYf9pSaqMbLTeWeOvc; __cfruid=7bc0f2493675bb6a43c937a473412a587ed10513-1588581516' -H 'Host: bitbns.com' -H 'origin: https://bitbns.com' -H 'pragma: no-store, no-cache' -H 'Referer: https://bitbns.com/trade/' -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0' -H 'xsrf-token: PBv34eZA-kDagE7iAQizfoh2wIMkzsRC1Cvk'

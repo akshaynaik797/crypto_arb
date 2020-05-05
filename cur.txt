@@ -1,0 +1,115 @@
+curl 'https://bitbns.com/order/getTickerAll/' \
+  -H 'authority: bitbns.com' \
+  -H 'pragma: no-store' \
+  -H 'cache-control: no-store' \
+  -H 'xsrf-token: mO457E2u-ltV-TvHMh2qVZxz1a8ihc_Z7f08' \
+  -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36' \
+  -H 'accept: */*' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'referer: https://bitbns.com/trade/' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'cookie: __cfduid=d19121de3e6145e5d221bfe4689ed70871588660419; __cfruid=c2d10588137b16f55d8067f758956e6cd95b4656-1588660435; _csrf=MeUsFKRDMfK4ytvEUwL09Cj6; _ga=GA1.2.1405175693.1588660437; _gid=GA1.2.1792243977.1588660437; popupToShow=0; connect.sid=s%3ADN5V_CJ0xJNHsbzRSofMxcpqgpJMhi2r.cFtihGcc4Qv3EIIO%2FcYS7%2FwGRGdnIqPHVL9E%2B7xaqOs; XSRF-TOKEN=mO457E2u-ltV-TvHMh2qVZxz1a8ihc_Z7f08' \
+  --compressed
+  
+  
+
+curl 'https://bitbns.com/order/purchasePlayBTC/' \
+  -H 'authority: bitbns.com' \
+  -H 'pragma: no-store' \
+  -H 'cache-control: no-store' \
+  -H 'xsrf-token: Sh50OHfe-k3dVdgxjvWocNQ9RaxgokW8uUNE' \
+  -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'accept: */*' \
+  -H 'origin: https://bitbns.com' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'referer: https://bitbns.com/trade/' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'cookie: __cfduid=d19121de3e6145e5d221bfe4689ed70871588660419; __cfruid=c2d10588137b16f55d8067f758956e6cd95b4656-1588660435; _csrf=MeUsFKRDMfK4ytvEUwL09Cj6; _ga=GA1.2.1405175693.1588660437; _gid=GA1.2.1792243977.1588660437; popupToShow=0; connect.sid=s%3ADN5V_CJ0xJNHsbzRSofMxcpqgpJMhi2r.cFtihGcc4Qv3EIIO%2FcYS7%2FwGRGdnIqPHVL9E%2B7xaqOs; _gat=1; XSRF-TOKEN=Sh50OHfe-k3dVdgxjvWocNQ9RaxgokW8uUNE' \
+  --data 'quantity=1&rate=78.8&coin=54&feeFlag=1' \
+  --compressed
+
+
+
+
+
+curl 'https://bitbns.com/order/sellPlayBTC/' \
+  -H 'authority: bitbns.com' \
+  -H 'pragma: no-store' \
+  -H 'cache-control: no-store' \
+  -H 'xsrf-token: tVPRqa2s-J5wG5KMzNTqX0j21s-heaqRoAtQ' \
+  -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'accept: */*' \
+  -H 'origin: https://bitbns.com' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'referer: https://bitbns.com/trade/' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'cookie: __cfduid=d19121de3e6145e5d221bfe4689ed70871588660419; __cfruid=c2d10588137b16f55d8067f758956e6cd95b4656-1588660435; _csrf=MeUsFKRDMfK4ytvEUwL09Cj6; _ga=GA1.2.1405175693.1588660437; _gid=GA1.2.1792243977.1588660437; popupToShow=0; connect.sid=s%3ADN5V_CJ0xJNHsbzRSofMxcpqgpJMhi2r.cFtihGcc4Qv3EIIO%2FcYS7%2FwGRGdnIqPHVL9E%2B7xaqOs; XSRF-TOKEN=tVPRqa2s-J5wG5KMzNTqX0j21s-heaqRoAtQ' \
+  --data 'quantity=1&rate=78.72&coin=54&feeFlag=1' \
+  --compressed
+
+
+
+
+
+
+curl 'https://bitbns.com/order/getBalance/' \
+  -H 'authority: bitbns.com' \
+  -H 'pragma: no-store' \
+  -H 'cache-control: no-store' \
+  -H 'xsrf-token: CUODOeDa-7GR3AO_O2570llUplw2ne3iLS4c' \
+  -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36' \
+  -H 'accept: */*' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'referer: https://bitbns.com/trade/' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'cookie: __cfduid=d19121de3e6145e5d221bfe4689ed70871588660419; __cfruid=c2d10588137b16f55d8067f758956e6cd95b4656-1588660435; _csrf=MeUsFKRDMfK4ytvEUwL09Cj6; _ga=GA1.2.1405175693.1588660437; _gid=GA1.2.1792243977.1588660437; popupToShow=0; connect.sid=s%3ADN5V_CJ0xJNHsbzRSofMxcpqgpJMhi2r.cFtihGcc4Qv3EIIO%2FcYS7%2FwGRGdnIqPHVL9E%2B7xaqOs; _gat=1; XSRF-TOKEN=CUODOeDa-7GR3AO_O2570llUplw2ne3iLS4c' \
+  --compressed
+
+
+
+curl 'https://bitbns.com/order/purchasePlayBTCUSDT/' \
+  -H 'authority: bitbns.com' \
+  -H 'pragma: no-store' \
+  -H 'cache-control: no-store' \
+  -H 'xsrf-token: skC3Ovh9-157pZw9dDXI-Nl20qpSaOaucJ0o' \
+  -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'accept: */*' \
+  -H 'origin: https://bitbns.com' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'referer: https://bitbns.com/trade/' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'cookie: __cfduid=d19121de3e6145e5d221bfe4689ed70871588660419; __cfruid=c2d10588137b16f55d8067f758956e6cd95b4656-1588660435; _csrf=MeUsFKRDMfK4ytvEUwL09Cj6; _ga=GA1.2.1405175693.1588660437; _gid=GA1.2.1792243977.1588660437; popupToShow=0; connect.sid=s%3ADN5V_CJ0xJNHsbzRSofMxcpqgpJMhi2r.cFtihGcc4Qv3EIIO%2FcYS7%2FwGRGdnIqPHVL9E%2B7xaqOs; XSRF-TOKEN=skC3Ovh9-157pZw9dDXI-Nl20qpSaOaucJ0o' \
+  --data 'quantity=0.00010939&rate=9050&coin=0&feeFlag=1' \
+  --compressed
+
+
+curl 'https://bitbns.com/order/sellPlayBTC/' \
+  -H 'authority: bitbns.com' \
+  -H 'pragma: no-store' \
+  -H 'cache-control: no-store' \
+  -H 'xsrf-token: MSurxVpV-QCASRFXGvdQSSZWs-BLfRTSWSy0' \
+  -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'accept: */*' \
+  -H 'origin: https://bitbns.com' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'referer: https://bitbns.com/trade/' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'cookie: __cfduid=d19121de3e6145e5d221bfe4689ed70871588660419; __cfruid=c2d10588137b16f55d8067f758956e6cd95b4656-1588660435; _csrf=MeUsFKRDMfK4ytvEUwL09Cj6; _ga=GA1.2.1405175693.1588660437; _gid=GA1.2.1792243977.1588660437; popupToShow=0; connect.sid=s%3ADN5V_CJ0xJNHsbzRSofMxcpqgpJMhi2r.cFtihGcc4Qv3EIIO%2FcYS7%2FwGRGdnIqPHVL9E%2B7xaqOs; XSRF-TOKEN=MSurxVpV-QCASRFXGvdQSSZWs-BLfRTSWSy0' \
+  --data 'quantity=0.00010939&rate=707119.29&coin=0&feeFlag=1' \
+  --compressed
