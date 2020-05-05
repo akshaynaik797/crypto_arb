@@ -1,4 +1,5 @@
 import time
+from datetime import datetime
 from arb_assets import fetch_bitbns_prices, check_for_triarb
 pairlist = [
             ['INR', 'USDT', 'BTC', 'INR'],
@@ -11,10 +12,16 @@ while(1):
     try:
         prices = fetch_bitbns_prices()
         for pairs in pairlist:
-            print(check_for_triarb(pairs, prices))
+            record = check_for_triarb(pairs, prices)
+            if record[0]/record[1]*100-100 > 0.9:
+                print(record)
+                timestamp = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+                with open("log.txt", "a") as fp:
+                    fp.write(f"{timestamp}, {record}"+'\n')
         print()
         time.sleep(1)
         var = 10
     except:
+        print(f"error wait {var} seconds.")
         time.sleep(var)
         var = var*1.1
