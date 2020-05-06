@@ -11,14 +11,13 @@ pairlist = [
 while(1):
     try:
         prices = fetch_bitbns_prices()
-        for pairs in pairlist:
-            record = check_for_triarb(pairs, prices)
-            if record[0]/record[1]*100-100 > 0.9:
-                print(record)
-                timestamp = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-                with open("log.txt", "a") as fp:
-                    fp.write(f"{timestamp}, {record}"+'\n')
-        print()
+#        for pairs in pairlist:
+#            record = check_for_triarb(pairs, prices)
+#            if record[0]/record[1]*100-100 > 0.9:
+#                print(record)
+        timestamp = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+        with open("bitbns.csv", "a") as fp:
+            fp.write(f"{timestamp}, {prices}"+'\n')
         time.sleep(1)
         var = 10
     except:

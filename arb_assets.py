@@ -1,5 +1,6 @@
+import requests
+
 def fetch_bitbns_prices():
-    import requests
     url1 = "https://bitbns.com/order/getTickerWithVolume/"
     data = requests.get(url1)
     data = data.json()
