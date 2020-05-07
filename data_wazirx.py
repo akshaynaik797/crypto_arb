@@ -1,7 +1,7 @@
 import requests, time
 var = 10 
 record = {}
-url1 = "https://bitbns.com/order/getTickerWithVolume/"
+url1 = "https://api.wazirx.com/api/v2/tickers"
 while(1):
     try:
         data = requests.get(url1)
@@ -9,7 +9,7 @@ while(1):
         timestamp = time.time()
         if data != record:
             record = data
-            with open("bitbns.csv", "a") as fp:
+            with open("wazirx.csv", "a") as fp:
                 row  = f"{timestamp}|{record}\n"
                 fp.write(row)
         time.sleep(1)
