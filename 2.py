@@ -11,8 +11,9 @@ pairlist = [
 with open("bitbns.csv") as fp:
     b = fp.readlines()
     for a in b:
+        timestamp = a[:a.find('{')]
         prices = json.loads(a[a.find('{'):].strip('\n').replace('\'','\"'))
         for pairs in pairlist:
             record = check_for_triarb(pairs, prices)
-            if record[0]/record[1]*100-100 > 0.9:
-                print(f"{record}, {record[0]/record[1]*100-100}")
+            if record[0]/record[1]*100-100 > 0.6:
+                print(f"{timestamp}, {record}, {record[0]/record[1]*100-100}")
