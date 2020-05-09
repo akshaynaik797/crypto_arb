@@ -6,11 +6,11 @@ mydb = myclient["crypto_prices"]
 mycol = mydb["wazirx"]
 docs = mycol.find()
 for a in docs:
-    bid = float(a['prices']['ltcinr']['sell'])
-    ask1 = float(a['prices']['ltcusdt']['buy'])
-    ask2 = float(a['prices']['usdtinr']['buy'])
+    bid = float(a['prices']['wrxinr']['sell'])
+    ask1 = float(a['prices']['wrxbtc']['buy'])
+    ask2 = float(a['prices']['btcinr']['buy'])
     timestamp = datetime.fromtimestamp(float(a['_id'])).isoformat()
     asks = ask1*ask2
-    if bid > asks*1.008:
+    if bid > asks*1.01:
         ratio = round(bid/asks*100-100, 2)
-        print(f"{timestamp[11:19]}, {round(bid, 2)}, {round(asks, 2)}, {ratio}")
+        print(f"{timestamp[:19]}, {round(bid, 2)}, {round(asks, 2)}, {ratio}")
