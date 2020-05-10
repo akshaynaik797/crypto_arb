@@ -2,8 +2,8 @@ import pymongo, json
 
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["crypto_prices"]
-mycol = mydb["wazirx"]
-with open("wazirx.csv") as fp:
+mycol = mydb["bitbns"]
+with open("bitbns.csv") as fp:
     for row in fp:
         a = row.split('|')
         record = json.loads(a[1].strip('\n').replace('\'', '\"'))
