@@ -1,6 +1,7 @@
-import requests, time
-var = 10
-url1 = "https://api.wazirx.com/api/v2/tickers"
+"""
+    script contains function for validate tri_arb existance on wazirx
+"""
+#pairs to check for tri_arb
 pairs = [
          ['inr', 'usdt', 'btc', 'inr'],
          ['inr', 'usdt', 'eth', 'inr'],
@@ -10,30 +11,22 @@ pairs = [
 ]
 
 def check_for_triarb(pair, data):
+    """
+        function to validate tri_arb
+        pair = a pair like ['inr', 'usdt', 'btc', 'inr']
+        data = tick data from url https://api.wazirx.com/api/v2/tickers
+    """
     limit = 1.008
     bid = float(data[pair[2]+pair[0]]['buy'])
     ask1 = float(data[pair[2]+pair[1]]['sell'])
     ask2 = float(data[pair[1]+pair[0]]['sell'])
     if bid > ask1*ask2*limit:
-        print(pair, bid, bid1, ask1, ask2)
+        return 1
     else:
         pair = pair[::-1]
         bid = float(data[pair[2]+pair[0]]['buy'])
         ask1 = 1/float(data[pair[1]+pair[2]]['buy'])
         ask2 = float(data[pair[1]+pair[0]]['sell'])
         if bid > ask1*ask2*limit:
-            print(pair, bid, ask1, ask2)
+            return 1
 
-while(1):
-    data = requests.get(url1)
-    try:
-        data = data.json()
-        for pair in pairs:
-            check_for_triarb(pair,data)
-        print()
-        time.sleep(1)
-        var = 10
-    except Exception as error:
-        print(error,f",error wait {var} seconds.")
-        time.sleep(var)
-        var = var*1.1

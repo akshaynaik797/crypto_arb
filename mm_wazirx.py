@@ -1,4 +1,4 @@
-import requests, time
+import requests, time, os
 profit = 1.01
 var = 10 
 url1 = "https://api.wazirx.com/api/v2/tickers"
@@ -13,6 +13,7 @@ while(1):
             if float(data[i]['sell']) > float(data[i]['buy'])*profit:
 #                print(data[i]['sell'], data[i]['buy'])
                 print(i)
+                os.system('paplay chimes-glassy.ogg &')
         print()
         time.sleep(1)
     except Exception as error:
