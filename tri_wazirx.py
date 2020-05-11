@@ -8,15 +8,20 @@ pairs = [
          ['inr', 'usdt', 'ltc', 'inr'],
          ['inr', 'usdt', 'xrp', 'inr'],
          ['inr', 'usdt', 'trx', 'inr'],
+         ['inr', 'btc', 'eth', 'inr'],
+         ['inr', 'btc', 'ltc', 'inr'],
+         ['inr', 'btc', 'xrp', 'inr'],
+         ['inr', 'btc', 'trx', 'inr'],
 ]
 
-def check_for_triarb(pair, data):
+def check_for_triarb(pair, data, limit):
     """
         function to validate tri_arb
         pair = a pair like ['inr', 'usdt', 'btc', 'inr']
         data = tick data from url https://api.wazirx.com/api/v2/tickers
+        limit = 1.006 or more 
     """
-    limit = 1.008
+    limit = limit
     bid = float(data[pair[2]+pair[0]]['buy'])
     ask1 = float(data[pair[2]+pair[1]]['sell'])
     ask2 = float(data[pair[1]+pair[0]]['sell'])

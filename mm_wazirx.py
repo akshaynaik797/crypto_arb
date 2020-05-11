@@ -1,5 +1,5 @@
 import requests, time, os
-profit = 1.01
+profit = 1.005
 var = 10 
 url1 = "https://api.wazirx.com/api/v2/tickers"
 mylist = ['BTC', 'XRP', 'USDT', 'ETH', 'TRX', 'LTC', 'WRX']

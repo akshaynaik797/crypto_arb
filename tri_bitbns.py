@@ -11,13 +11,13 @@ pairs = [
          ['INR', 'USDT', 'TRX', 'INR'],
 ]
 
-def check_for_triarb(pair, data):
+def check_for_triarb(pair, data, limit):
     """
         function to validate tri_arb
         pair = a pair like ['INR', 'USDT', 'BTC', 'INR']
         data = tick data from url https://bitbns.com/order/getTickerWithVolume/
     """
-    limit = 1.008
+    limit = limit
     bid = data[pair[2]]['highest_buy_bid']
     ask1 = data[pair[2]+pair[1]]['lowest_sell_bid']
     ask2 = data[pair[1]]['lowest_sell_bid']
