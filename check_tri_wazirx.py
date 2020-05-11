@@ -11,18 +11,18 @@ pairs = [
 
 def check_for_triarb(pair, data):
     limit = 1.008
-    bid = float(data[pair[2]+pair[0]]['sell'])
-    ask1 = float(data[pair[2]+pair[1]]['buy'])
-    ask2 = float(data[pair[1]+pair[0]]['buy'])
+    bid = float(data[pair[2]+pair[0]]['buy'])
+    ask1 = float(data[pair[2]+pair[1]]['sell'])
+    ask2 = float(data[pair[1]+pair[0]]['sell'])
     if bid > ask1*ask2*limit:
-        print(pair)
+        print(pair, bid, bid1, ask1, ask2)
     else:
         pair = pair[::-1]
-        bid = float(data[pair[2]+pair[0]]['sell'])
-        ask1 = 1/float(data[pair[1]+pair[2]]['sell'])
-        ask2 = float(data[pair[1]+pair[0]]['buy'])
+        bid = float(data[pair[2]+pair[0]]['buy'])
+        ask1 = 1/float(data[pair[1]+pair[2]]['buy'])
+        ask2 = float(data[pair[1]+pair[0]]['sell'])
         if bid > ask1*ask2*limit:
-            print(pair)
+            print(pair, bid, ask1, ask2)
 
 while(1):
     data = requests.get(url1)
