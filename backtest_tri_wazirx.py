@@ -9,5 +9,5 @@ bitbns = mycol.find()
 
 for i in bitbns:
     for pair in pairs:
-        if check_for_triarb(pair, i['prices'], 1.01):
+        if check_for_triarb(pair, i['prices'], 1.006):
             print(datetime.fromtimestamp(i['_id']).isoformat(), pair)

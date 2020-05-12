@@ -7,8 +7,8 @@ while(1):
         data = requests.get(url1).json()
         try:
             for pair in pairs:
-                if check_for_triarb(pair, data):
-                    print(pair)
+                if check_for_triarb(pair, data, 1.006):
+                    print(pair, os.system('date'))
                     os.system('paplay chimes-glassy.ogg &')
             sleep(60)
             var = 10
