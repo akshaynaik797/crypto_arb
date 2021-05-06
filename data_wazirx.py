@@ -10,7 +10,7 @@ while(1):
         if data != record:
             record = data
             with open("wazirx.csv", "a") as fp:
-                row  = f"{timestamp}|{record}\n"
+                row = f"{timestamp}|{record}\n"
                 fp.write(row)
         time.sleep(1)
         var = 10
